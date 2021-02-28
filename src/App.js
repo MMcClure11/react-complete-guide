@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person';
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
 
 const app = () => {
 
@@ -45,6 +47,8 @@ const app = () => {
   return (
     <div className="App">
       <h1>Hi, I'm a React App</h1>
+      <UserInput />
+      <UserOutput />
       <button 
         style={ style }
         onClick={ () => switchNameHandler('Maximilian!!') }>Switch Name</button>
