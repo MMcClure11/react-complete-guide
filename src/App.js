@@ -44,11 +44,21 @@ const app = () => {
     cursor: 'pointer',
   };
 
+  const [ usernameState, setUsernameState ] = useState({
+    username: "Mex"
+  })
+
+  const usernameChangedHandler = (e) => {
+    setUsernameState({
+      username: e.target.value
+    })
+  }
+
   return (
     <div className="App">
       <h1>Hi, I'm a React App</h1>
-      <UserInput />
-      <UserOutput />      
+      <UserInput changed={ usernameChangedHandler } />
+      <UserOutput username={ usernameState.username } />      
       <UserOutput />
       <UserOutput />
       <button 
