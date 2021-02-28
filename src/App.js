@@ -57,7 +57,7 @@ const app = () => {
   return (
     <div className="App">
       <h1>Hi, I'm a React App</h1>
-      <UserInput changed={ usernameChangedHandler } />
+      <UserInput changed={ usernameChangedHandler } username={ usernameState.username }/>
       <UserOutput username={ usernameState.username } />      
       <UserOutput />
       <UserOutput />
