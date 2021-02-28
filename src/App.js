@@ -48,6 +48,8 @@ const app = () => {
     <div className="App">
       <h1>Hi, I'm a React App</h1>
       <UserInput />
+      <UserOutput />      
+      <UserOutput />
       <UserOutput />
       <button 
         style={ style }
